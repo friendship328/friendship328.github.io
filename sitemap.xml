@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://friendship328.github.io/about/index.html</loc>
+    
+    <lastmod>2017-10-19T07:40:23.727Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://friendship328.github.io/categories/index.html</loc>
+    
+    <lastmod>2017-10-19T07:35:24.340Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://friendship328.github.io/tags/index.html</loc>
+    
+    <lastmod>2017-10-19T07:34:53.646Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://friendship328.github.io/2017/10/18/hello-world/</loc>
     
-    <lastmod>2017-10-18T06:48:42.496Z</lastmod>
+    <lastmod>2017-10-19T07:32:33.920Z</lastmod>
     
   </url>
   
