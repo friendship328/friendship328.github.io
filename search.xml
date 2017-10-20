@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[纯代码实现侧边栏显示社交按钮组]]></title>
+    <url>%2F2017%2F10%2F19%2F%E7%BA%AF%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E6%98%BE%E7%A4%BA%E7%A4%BE%E4%BA%A4%E6%8C%89%E9%92%AE%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[其实想要实现这个功能也是挺简单的，有两种办法! 方法1： 纯html代码实现(优点：添加很简单，只需把html代码粘贴到小工具中的文本中即可。缺点：更改相对麻烦）把下面内容改成自己的。 12345678&lt;div class="textwidget"&gt;&lt;a class="tweibo" style="padding-left: 12px;" href="http://wpa.qq.com/msgrd?v=3&amp;amp;uin=你的QQ号&amp;amp;site=qq&amp;amp;menu=yes" target="_blank" rel="external nofollow"&gt;&lt;i class="fa fa-qq"&gt;&lt;/i&gt; 在线服务&lt;/a&gt;&lt;a class="tweibo" style="padding-left: 12px;" href="http://weibo.com/你的微博" target="_blank" rel="external nofollow"&gt;&lt;i class="fa fa-weibo"&gt;&lt;/i&gt; 微博&lt;/a&gt;&lt;a class="tweibo" style="padding-left: 12px;" href="http://t.qq.com/你的企鹅微博" target="_blank" rel="external nofollow"&gt;&lt;i class="fa fa-tencent-weibo"&gt;&lt;/i&gt; 腾讯微博&lt;/a&gt;&lt;a class="rss" style="padding-left: 12px;" href="https://laod.cn/go?url=http://laid.cn/s/你的网址" target="_blank"&gt;&lt;i class="fa fa-paw"&gt;&lt;/i&gt; 百度口碑&lt;/a&gt;&lt;/div&gt; 方法2： 通过funtions增加自定义用户资料，然后通过函数调用。 先加代码到当前主题文件夹下的funtions.php中，代码如下： 12345678//自定义用户资料add_filter( 'user_contactmethods', 'yeziting_add_contact_fields' );function yeziting_add_contact_fields( $contactmethods ) &#123;$contactmethods['qq'] = 'QQ';$contactmethods['qq_weibo'] = '腾讯微博';$contactmethods['sina_weibo'] = '新浪微博';$contactmethods['donate'] = '百度口碑';&#125; 然后再加代码到sidebar.php文件中。代码如下。（修改的话直接进后台的个人资料中填写。QQ直接写QQ号即可。微博：http://weibo.com/你的微博地址。腾讯微博同样如此，百度口碑写自己的网址即。 12345&lt;div class="textwidget"&gt;&lt;a class="tweibo" style="padding-left: 12px;" href="http://wpa.qq.com/msgrd?v=3&amp;amp;uin=&amp;lt;?php the_author_meta( 'qq' );?&amp;gt;&amp;amp;site=qq&amp;amp;menu=yes" target="_blank" rel="external nofollow"&gt;&lt;i class="fa fa-qq"&gt;&lt;/i&gt; QQ交谈&lt;/a&gt; &lt;a class="tweibo" style="padding-left: 12px;" href="&amp;quot;http://weibo.com/&amp;lt;?php"&gt;"target="_blank" rel="external nofollow"&amp;gt;&lt;i class="fa fa-weibo"&gt;&lt;/i&gt; 微博&lt;/a&gt; &lt;a class="tweibo" style="padding-left: 12px;" href="http://t.qq.com/&amp;lt;?php the_author_meta( 'qq_weibo' );?&amp;gt;" target="_blank" rel="external nofollow"&gt;&lt;i class="fa fa-tencent-weibo"&gt;&lt;/i&gt; 腾讯微博&lt;/a&gt; style="padding-left: 12px;" href="http://koubei.baidu.com/s/&lt;!--?php the_author_meta( 'donate' );?--&gt;" target="_blank"&amp;gt;&lt;i class="fa fa-paw"&gt;&lt;/i&gt; 百度口碑&lt;/div&gt; CSS代码： 12345678910.textwidget &#123;padding: 15px;color: #777;&#125;.textwidget a &#123;color: #777;&#125;.textwidget a:hover &#123;color: #45B6F7;&#125;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>按钮</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2017%2F10%2F18%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
