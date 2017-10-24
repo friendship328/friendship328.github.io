@@ -126,7 +126,7 @@
 <meta name="description" content="人生如逆旅，我亦是行人。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Dsiny&#39;s Blog">
-<meta property="og:url" content="https://friendship328.github.io/tags/css3-布局/index.html">
+<meta property="og:url" content="https://friendship328.github.io/page/2/index.html">
 <meta property="og:site_name" content="Dsiny&#39;s Blog">
 <meta property="og:description" content="人生如逆旅，我亦是行人。">
 <meta property="og:locale" content="zh-Hans">
@@ -162,13 +162,13 @@
 
 
 
-  <link rel="canonical" href="https://friendship328.github.io/tags/css3-布局/"/>
+  <link rel="canonical" href="https://friendship328.github.io/page/2/"/>
 
 
 
 
 
-  <title>标签: css3,布局 | Dsiny's Blog</title>
+  <title>Dsiny's Blog</title>
   
 
 
@@ -188,7 +188,8 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -315,55 +316,401 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  
-  
-  
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>css3,布局<small>标签</small>
-        </h2>
-      </div>
-
+  <section id="posts" class="posts-expand">
+    
       
-        
+
+  
+
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/6eb4240a/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dsiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dsiny's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/posts/6eb4240a/" itemprop="url">
-              
-                <span itemprop="name">css3实现图片木桶布局</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/6eb4240a/" itemprop="url">css3实现图片木桶布局</a></h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-05T15:23:13+08:00"
-              content="2016-10-05" >
-          10-05
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
 
-    </header>
-  </article>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-05T15:23:13+08:00">
+                2016-10-05
+              </time>
+            
 
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/6eb4240a/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="posts/6eb4240a/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+            <span class="post-meta-divider">|</span>
+            
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+
+                <span title="字数统计">
+                  281字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+
+                <span title="阅读时长">
+                  2
+                </span>
+              
+          
+            <div class="post-wordcount">
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        
+          <p><strong>思路</strong>：</p>
+<p>1、容器flex布局</p>
+<p>2、图片定高、超出换行</p>
+<p>3、图片都设置 flex-grow: 1; 以充满整行</p>
+<p>4、图片都设置 object-fit: cover; 以解决图片变形</p>
+<p>5、容器 :after 伪类 设置 flex-grow: 9999; 且值足够高 以解决最后一行图片数量少时仍然充满整行过于扁长</p>
+<p><strong>实现效果：</strong></p>
+<p><img src="/images/201621.png" alt="这里写图片描述"><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/6eb4240a/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+      </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
+
+
+    
+      
 
   
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/b565c126/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dsiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dsiny's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/b565c126/" itemprop="url">css小细节总结</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-12T15:23:13+08:00">
+                2016-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/b565c126/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="posts/b565c126/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+            <span class="post-meta-divider">|</span>
+            
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+
+                <span title="字数统计">
+                  1,123字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+
+                <span title="阅读时长">
+                  5
+                </span>
+              
+          
+            <div class="post-wordcount">
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="max-width-防止图片撑破容器"><a href="#max-width-防止图片撑破容器" class="headerlink" title="max-width 防止图片撑破容器"></a><code>max-width</code> 防止图片撑破容器</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> <span class="selector-tag">img</span> &#123;</div><div class="line">  <span class="attribute">display</span>:inline-block;</div><div class="line">  <span class="attribute">max-width</span>: <span class="number">100%</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="pointer-event-禁用事件-该属性可以做以下事："><a href="#pointer-event-禁用事件-该属性可以做以下事：" class="headerlink" title="pointer-event 禁用事件,该属性可以做以下事："></a><code>pointer-event</code> 禁用事件,该属性可以做以下事：</h4><p>阻止任何点击动作的执行;<br>使链接显示为默认光标<code>（cursor:default）</code>;<br>阻止触发hover和active状态;<br>阻止JavaScript点击事件的触发;</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//使用该类，任何点击事件将无效</span></div><div class="line"><span class="selector-class">.disabled</span> &#123; <span class="attribute">pointer-events</span>: none; &#125;</div></pre></td></tr></table></figure>
+<h4 id="overflow-清楚浮动"><a href="#overflow-清楚浮动" class="headerlink" title="overflow 清楚浮动"></a><code>overflow</code> 清楚浮动</h4><p>overflow除了定义溢出元素内容区的内容会如何处理外，还可以创建块格式化上下文，清除浮动。</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"clearfix"</span>&gt;</div><div class="line">  &lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"left"</span>&gt;left&lt;/<span class="keyword">div</span>&gt;</div><div class="line">  &lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"right"</span>&gt;right&lt;/<span class="keyword">div</span>&gt;</div><div class="line">&lt;/<span class="keyword">div</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clearfix</span> &#123;</div><div class="line">   <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="user-select-禁用文本选中"><a href="#user-select-禁用文本选中" class="headerlink" title="user-select 禁用文本选中"></a><code>user-select</code> 禁用文本选中</h4><p>IE6-9不支持该属性，可以通过给body添加<code>onselectstart=&quot;return false;&quot;</code>的内联JavaScript语句搞定。</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">body</span>&#123;</div><div class="line">  user-<span class="keyword">select</span>: none; //页面中的文本不能被选中</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/b565c126/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+      </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
@@ -411,7 +758,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -433,7 +780,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -866,17 +1213,29 @@
 
 	
 
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 96916, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/96916/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
 
 
 
 
-  
-
-
-
-
-
-  
 
 
 
@@ -1264,5 +1623,11 @@
 
   <!-- 鼠标页面点击 -->
 <script type="text/javascript" src="/js/src/mouse.js"></script>
+<script type="text/javascript" src="/js/src/activate-power-mode.js"></script>
+<script>
+POWERMODE.colorful = true; // 控制开启/开启礼花特效
+POWERMODE.shake = true; // 控制开启/关闭屏幕震动特效
+document.body.addEventListener('input', POWERMODE);
+</script>
 </body>
 </html>
