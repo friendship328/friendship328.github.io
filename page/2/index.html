@@ -331,6 +331,203 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/fe6afcc5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dsiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dsiny's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/fe6afcc5/" itemprop="url">hexo seo优化</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-09T10:10:15+08:00">
+                2016-11-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/fe6afcc5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="posts/fe6afcc5/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+            <span class="post-meta-divider">|</span>
+            
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+
+                <span title="字数统计">
+                  2,622字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+
+                <span title="阅读时长">
+                  11
+                </span>
+              
+          
+            <div class="post-wordcount">
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="Next主题自带SEO优化选项"><a href="#Next主题自带SEO优化选项" class="headerlink" title="Next主题自带SEO优化选项"></a>Next主题自带SEO优化选项</h3><p>hexo博客next提供了seo优化选项，在主题配置文件_config.yml中有个选项是seo，默认是false，改成true即开启了seo优化，会进行一些seo优化，如改变博文title等，然后相同文件下有个关键字选项keywords，填充上，写博文时最好每篇博文都加上keywords。hexo的根目录配置文件_config.yml中title、subtitle和description也建议填上。开启seo优化后可以查看网页源码跟之前有什么不同。</p>
+<h3 id="文章标题转换唯一链接"><a href="#文章标题转换唯一链接" class="headerlink" title="文章标题转换唯一链接"></a>文章标题转换唯一链接</h3><p>使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="external"><code>hexo-abbrlink</code></a>可以做到，安装：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> npm install hexo-abbrlink --save</span></div></pre></td></tr></table></figure>
+<p>然后hexo的根目录配置文件<code>_config.yml</code>中修改：</p>
+<figure class="highlight x86asm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">permalink:</span> :abbrlink/</div><div class="line"><span class="symbol">abbrlink:</span></div><div class="line"><span class="symbol">  alg:</span> <span class="keyword">crc32</span>  # 算法：crc16(<span class="meta">default</span>) <span class="keyword">and</span> <span class="keyword">crc32</span></div><div class="line"><span class="symbol">  rep:</span> <span class="keyword">dec</span>    # 进制：<span class="keyword">dec</span>(<span class="meta">default</span>) <span class="keyword">and</span> hex</div></pre></td></tr></table></figure>
+<p>这样就确保了博文链接的唯一化，只要不修改md文件的abbrlink的值，url就永久不会改变。如此md文件名和文件内容也可以随便改了。这样也有利于SEO优化。</p>
+<h3 id="给出站链接添加-“nofollow”-标签"><a href="#给出站链接添加-“nofollow”-标签" class="headerlink" title="给出站链接添加 “nofollow” 标签"></a>给出站链接添加 “nofollow” 标签</h3><p>nofollow标签是由谷歌领头创新的一个“反垃圾链接”的标签，并被百度、yahoo等各大搜索引擎广泛支持，引用nofollow标签的目的是：用于指示搜索引擎不要追踪（即抓取）网页上的带有nofollow属性的任何出站链接，以减少垃圾链接的分散网站权重。</p>
+<p>Hexo 的 Next 主题需要改以下几个地方：</p>
+<p>找到<code>footer.swig</code>，路径在<code>your-hexo-site\themes\next\layout\_partials</code>，将下面代码中的a标签加上<code>rel=&quot;external nofollow&quot;</code>属性；</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; __(<span class="name">'footer.powered'</span>, '&lt;a  class=<span class="string">"theme-link"</span>  href=<span class="string">"http://hexo.io"</span>&gt;Hexo&lt;/a&gt;') &#125;&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a <span class="attribute">class</span>=<span class="string">"theme-link"</span> <span class="attribute">href</span>=<span class="string">"https://github.com/iissnan/hexo-theme-next"</span>&gt;</div></pre></td></tr></table></figure>
+<p>修改<code>sidebar.swig</code>文件，路径在<code>your-hexo-site\themes\next\layout_macro</code>，将下面代码中的a标签加上<code>rel=&quot;external nofollow&quot;</code>属性；<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/fe6afcc5/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+      </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/6eb4240a/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -758,7 +955,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -769,7 +966,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
