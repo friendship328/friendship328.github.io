@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://friendship328.github.io/"/>
-  <updated>2017-10-24T09:07:25.266Z</updated>
+  <updated>2017-10-25T06:29:37.844Z</updated>
   <id>https://friendship328.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Blizzard</title>
+    <link href="https://friendship328.github.io/posts/c454c54e/"/>
+    <id>https://friendship328.github.io/posts/c454c54e/</id>
+    <published>2017-10-25T06:27:10.000Z</published>
+    <updated>2017-10-25T06:29:37.844Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/%E6%9A%B4%E9%9B%AA%E6%B8%B8%E6%88%8FCG.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/12.png"}});</script><!-- dplayer used1 -->]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;div id=&quot;dplayer0&quot; class=&quot;dplayer&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;var dplayer0
+      
+    
+    </summary>
+    
+      <category term="游戏" scheme="https://friendship328.github.io/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+      <category term="Blizzard" scheme="https://friendship328.github.io/tags/Blizzard/"/>
+    
+      <category term="CG" scheme="https://friendship328.github.io/tags/CG/"/>
+    
+  </entry>
   
   <entry>
     <title>美网友评出最“作死”15张网红照片</title>
