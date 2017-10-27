@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[一人我饮酒碎]]></title>
+    <title><![CDATA[一人我饮酒醉]]></title>
     <url>%2Fposts%2Fea259480%2F</url>
-    <content type="text"><![CDATA[var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/yiren.png"}});]]></content>
+    <content type="text"><![CDATA[var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/yiren.png"}});]]></content>
       <categories>
         <category>视频</category>
       </categories>

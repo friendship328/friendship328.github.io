@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://friendship328.github.io/"/>
-  <updated>2017-10-27T05:55:05.054Z</updated>
+  <updated>2017-10-27T05:56:27.394Z</updated>
   <id>https://friendship328.github.io/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>一人我饮酒碎</title>
+    <title>一人我饮酒醉</title>
     <link href="https://friendship328.github.io/posts/ea259480/"/>
     <id>https://friendship328.github.io/posts/ea259480/</id>
     <published>2017-10-27T06:27:10.000Z</published>
-    <updated>2017-10-27T05:55:05.054Z</updated>
+    <updated>2017-10-27T05:56:27.394Z</updated>
     
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/yiren.png"}});</script><!-- dplayer used1 -->]]></content>
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/yiren.png"}});</script><!-- dplayer used1 -->]]></content>
     
     <summary type="html">
     
       
       
-        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;div id=&quot;dplayer0&quot; class=&quot;dplayer&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;var dplayer0
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;div id=&quot;dplayer1&quot; class=&quot;dplayer&quot; style=&quot;margin-bottom: 20px;&quot;&gt;&lt;/div&gt;&lt;script&gt;var dplayer1
       
     
     </summary>
