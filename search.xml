@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Blizzard]]></title>
+    <title><![CDATA[一个我饮酒碎]]></title>
     <url>%2Fposts%2Fc454c54e%2F</url>
-    <content type="text"><![CDATA[var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/12.png"}});]]></content>
+    <content type="text"><![CDATA[var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/yiren.png"}});]]></content>
       <categories>
         <category>视频</category>
       </categories>
