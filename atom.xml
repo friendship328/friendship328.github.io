@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://friendship328.github.io/"/>
-  <updated>2017-10-27T05:36:05.356Z</updated>
+  <updated>2017-10-27T05:55:05.054Z</updated>
   <id>https://friendship328.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>一个我饮酒碎</title>
+    <title>一人我饮酒碎</title>
     <link href="https://friendship328.github.io/posts/ea259480/"/>
     <id>https://friendship328.github.io/posts/ea259480/</id>
     <published>2017-10-27T06:27:10.000Z</published>
-    <updated>2017-10-27T05:36:05.356Z</updated>
+    <updated>2017-10-27T05:55:05.054Z</updated>
     
     <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div id="dplayer0" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/yiren.png"}});</script><!-- dplayer used1 -->]]></content>
     
