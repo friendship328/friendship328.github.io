@@ -331,6 +331,369 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/936d8fb1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dsiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dsiny's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/936d8fb1/" itemprop="url">10种实用的CSS鼠标滑过按钮特效</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-28T10:42:25+08:00">
+                2017-05-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/css/H5/" itemprop="url" rel="index">
+                    <span itemprop="name">H5</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/936d8fb1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="posts/936d8fb1/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+            <span class="post-meta-divider">|</span>
+            
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+
+                <span title="字数统计">
+                  1,490
+                </span>
+              
+
+              
+
+              
+          
+            <div class="post-wordcount">
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <script src="\assets\js\APlayer.min.js"> </script><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div><div class="line">326</div><div class="line">327</div><div class="line">328</div><div class="line">329</div><div class="line">330</div><div class="line">331</div><div class="line">332</div><div class="line">333</div><div class="line">334</div><div class="line">335</div><div class="line">336</div><div class="line">337</div><div class="line">338</div><div class="line">339</div><div class="line">340</div><div class="line">341</div><div class="line">342</div><div class="line">343</div><div class="line">344</div><div class="line">345</div><div class="line">346</div><div class="line">347</div><div class="line">348</div><div class="line">349</div><div class="line">350</div><div class="line">351</div><div class="line">352</div><div class="line">353</div><div class="line">354</div><div class="line">355</div><div class="line">356</div><div class="line">357</div><div class="line">358</div><div class="line">359</div><div class="line">360</div><div class="line">361</div><div class="line">362</div><div class="line">363</div><div class="line">364</div><div class="line">365</div><div class="line">366</div><div class="line">367</div><div class="line">368</div><div class="line">369</div><div class="line">370</div><div class="line">371</div><div class="line">372</div><div class="line">373</div><div class="line">374</div><div class="line">375</div><div class="line">376</div><div class="line">377</div><div class="line">378</div><div class="line">379</div><div class="line">380</div><div class="line">381</div><div class="line">382</div><div class="line">383</div><div class="line">384</div><div class="line">385</div><div class="line">386</div><div class="line">387</div><div class="line">388</div><div class="line">389</div><div class="line">390</div><div class="line">391</div><div class="line">392</div><div class="line">393</div><div class="line">394</div><div class="line">395</div><div class="line">396</div><div class="line">397</div><div class="line">398</div><div class="line">399</div><div class="line">400</div><div class="line">401</div><div class="line">402</div><div class="line">403</div><div class="line">404</div><div class="line">405</div><div class="line">406</div><div class="line">407</div><div class="line">408</div><div class="line">409</div><div class="line">410</div><div class="line">411</div><div class="line">412</div><div class="line">413</div><div class="line">414</div><div class="line">415</div><div class="line">416</div><div class="line">417</div><div class="line">418</div><div class="line">419</div><div class="line">420</div><div class="line">421</div><div class="line">422</div><div class="line">423</div><div class="line">424</div><div class="line">425</div><div class="line">426</div><div class="line">427</div><div class="line">428</div><div class="line">429</div><div class="line">430</div><div class="line">431</div><div class="line">432</div><div class="line">433</div><div class="line">434</div><div class="line">435</div><div class="line">436</div><div class="line">437</div><div class="line">438</div><div class="line">439</div><div class="line">440</div><div class="line">441</div><div class="line">442</div><div class="line">443</div><div class="line">444</div><div class="line">445</div><div class="line">446</div><div class="line">447</div><div class="line">448</div><div class="line">449</div><div class="line">450</div><div class="line">451</div><div class="line">452</div><div class="line">453</div><div class="line">454</div><div class="line">455</div><div class="line">456</div><div class="line">457</div><div class="line">458</div><div class="line">459</div><div class="line">460</div><div class="line">461</div><div class="line">462</div><div class="line">463</div><div class="line">464</div><div class="line">465</div><div class="line">466</div><div class="line">467</div><div class="line">468</div><div class="line">469</div><div class="line">470</div><div class="line">471</div><div class="line">472</div><div class="line">473</div><div class="line">474</div><div class="line">475</div><div class="line">476</div><div class="line">477</div><div class="line">478</div><div class="line">479</div><div class="line">480</div><div class="line">481</div><div class="line">482</div><div class="line">483</div><div class="line">484</div><div class="line">485</div><div class="line">486</div><div class="line">487</div><div class="line">488</div><div class="line">489</div><div class="line">490</div><div class="line">491</div><div class="line">492</div><div class="line">493</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>login<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">media</span>=<span class="string">"screen"</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="css">        <span class="comment">/* 公用样式 */</span></span></div><div class="line"><span class="undefined">        body&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="undefined">            height: 0;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#F1F1F1</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.warp</span>&#123;</span></div><div class="line"><span class="undefined">            width: 250px;</span></div><div class="line"><span class="undefined">            height: 150px;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#5e7c87</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">float</span><span class="selector-pseudo">:left</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">margin</span><span class="selector-pseudo">:15px</span> 15<span class="selector-tag">px</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">box-shadow</span>: 10<span class="selector-tag">px</span> 10<span class="selector-tag">px</span> 5<span class="selector-tag">px</span> <span class="selector-id">#888888</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.sim-button</span>&#123;</span></div><div class="line"><span class="undefined">            line-height: 50px;</span></div><div class="line"><span class="undefined">            height: 50px;</span></div><div class="line"><span class="undefined">            text-align: center;</span></div><div class="line"><span class="undefined">            margin-right: auto;</span></div><div class="line"><span class="undefined">            margin-left: auto;</span></div><div class="line"><span class="undefined">            margin-top: 50px;</span></div><div class="line"><span class="undefined">            width: 60%;</span></div><div class="line"><span class="undefined">            cursor: pointer;</span></div><div class="line"><span class="undefined">            color: rgba(255,255,255,1);</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果一 */</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button1</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button1</span><span class="selector-pseudo">:hover</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.2</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">border-radius</span><span class="selector-pseudo">:20px</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果2 */</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button2</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">            <span class="selector-tag">overflow</span><span class="selector-pseudo">:hidden</span>;</span></div><div class="line"><span class="undefined">            position: relative;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button2</span><span class="selector-pseudo">:hover</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.2</span>);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button2</span>&gt;<span class="selector-tag">span</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button2</span><span class="selector-pseudo">:hover</span>&gt;<span class="selector-tag">span</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button2</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">content</span><span class="selector-pseudo">:attr(data-text)</span>;</span></div><div class="line"><span class="undefined">            width: 100%;</span></div><div class="line"><span class="undefined">            height: 100%;</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: -50px;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button2</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">left</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:1</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果三 */</span></span></div><div class="line"><span class="css">         <span class="selector-class">.button3</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">            <span class="selector-tag">overflow</span><span class="selector-pseudo">:hidden</span>;</span></div><div class="line"><span class="undefined">            position: relative;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button3</span><span class="selector-pseudo">:hover</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.2</span>);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button3</span>&gt;<span class="selector-tag">span</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button3</span><span class="selector-pseudo">:hover</span>&gt;<span class="selector-tag">span</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button3</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">content</span><span class="selector-pseudo">:attr(data-text)</span>;</span></div><div class="line"><span class="undefined">            width: 100%;</span></div><div class="line"><span class="undefined">            height: 100%;</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="undefined">            -webkit-transform: translate(-9%, -50%) rotate(-9deg);</span></div><div class="line"><span class="undefined">                    transform: translate(-9%, -50%) rotate(-9deg);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button3</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="undefined">            -webkit-transform: translate(0, 0) rotate(0deg);</span></div><div class="line"><span class="undefined">                    transform: translate(0, 0) rotate(0deg);</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:1</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果四 */</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button4</span>&#123;</span></div><div class="line"><span class="undefined">            position: relative;</span></div><div class="line"><span class="css">            <span class="selector-tag">overflow</span><span class="selector-pseudo">:hidden</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button4</span> <span class="selector-tag">span</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">z-index</span><span class="selector-pseudo">:2</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button4</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">content</span><span class="selector-pseudo">:""</span>;</span></div><div class="line"><span class="undefined">            width: 100%;</span></div><div class="line"><span class="undefined">            height: 100%;</span></div><div class="line"><span class="css">            <span class="selector-tag">z-index</span><span class="selector-pseudo">:1</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="css">            <span class="selector-tag">top</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button4</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:1</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-180deg</span>) <span class="selector-tag">scale</span>(0<span class="selector-class">.5</span>,1);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-180deg</span>) <span class="selector-tag">scale</span>(0<span class="selector-class">.5</span>,1);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果五 */</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button5</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span><span class="selector-pseudo">:none</span>;</span></div><div class="line"><span class="undefined">            position: relative;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button5</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="undefined">            content: '';</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="undefined">            width: 100%;</span></div><div class="line"><span class="undefined">            height: 100%;</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button5</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">scale</span>(1<span class="selector-class">.2</span>,1<span class="selector-class">.2</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">scale</span>(1<span class="selector-class">.2</span>,1<span class="selector-class">.2</span>);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button5</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">content</span><span class="selector-pseudo">:''</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">width</span><span class="selector-pseudo">:100</span>%;</span></div><div class="line"><span class="css">            <span class="selector-tag">height</span><span class="selector-pseudo">:100</span>%;</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">scale</span>(0<span class="selector-class">.5</span>,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">scale</span>(0<span class="selector-class">.5</span>,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button5</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:1</span>;</span></div><div class="line"><span class="undefined">            -webkit-transform: scale(1,1);</span></div><div class="line"><span class="undefined">                    transform: scale(1,1);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果六 */</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button6</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span><span class="selector-pseudo">:none</span>;</span></div><div class="line"><span class="undefined">            position: relative;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button6</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="undefined">            content: '';</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="undefined">            width: 100%;</span></div><div class="line"><span class="undefined">            height: 100%;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button6</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">scale</span>(0<span class="selector-class">.5</span>,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">scale</span>(0<span class="selector-class">.5</span>,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button6</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">content</span><span class="selector-pseudo">:''</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">width</span><span class="selector-pseudo">:100</span>%;</span></div><div class="line"><span class="css">            <span class="selector-tag">height</span><span class="selector-pseudo">:100</span>%;</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">scale</span>(1<span class="selector-class">.2</span>,1<span class="selector-class">.2</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">scale</span>(1<span class="selector-class">.2</span>,1<span class="selector-class">.2</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button6</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:1</span>;</span></div><div class="line"><span class="undefined">            -webkit-transform: scale(1,1);</span></div><div class="line"><span class="undefined">                    transform: scale(1,1);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果七 27*/</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button7</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">            <span class="selector-tag">overflow</span><span class="selector-pseudo">:hidden</span>;</span></div><div class="line"><span class="undefined">            position: relative;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button7</span><span class="selector-pseudo">:hover</span>&#123;</span></div><div class="line"><span class="undefined">            border: 1px solid rgba(255,255,255,0);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button7</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="undefined">            content: '';</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            bottom: 0;</span></div><div class="line"><span class="undefined">            width: 100%;</span></div><div class="line"><span class="undefined">            height: 1px;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="undefined">            -webkit-transform: translate(-100%, -600%) rotate(9deg);</span></div><div class="line"><span class="undefined">                    transform: translate(-100%, -600%)  rotate(9deg);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition-timing-function</span>: <span class="selector-tag">cubic-bezier</span>(0<span class="selector-class">.75</span>, 0, 0<span class="selector-class">.125</span>, 1);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition-timing-function</span>: <span class="selector-tag">cubic-bezier</span>(0<span class="selector-class">.75</span>, 0, 0<span class="selector-class">.125</span>, 1);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.5s</span> ;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button7</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="undefined">             -webkit-transform: translate(0,0);</span></div><div class="line"><span class="undefined">                     transform: translate(0,0);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果八 */</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button8</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">color</span><span class="selector-pseudo">:rgba(255</span>,255,255,1);</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span><span class="selector-pseudo">:none</span>;</span></div><div class="line"><span class="undefined">            position: relative;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button8</span><span class="selector-pseudo">:hover</span>&gt;<span class="selector-tag">span</span>&#123;</span></div><div class="line"><span class="undefined">            letter-spacing: 2px;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button8</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">content</span><span class="selector-pseudo">:''</span>;</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="undefined">            width: 100%;</span></div><div class="line"><span class="undefined">            height: 100%;</span></div><div class="line"><span class="undefined">            z-index: 1;</span></div><div class="line"><span class="undefined">            opacity: 0;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="undefined">            border-top-width: 1px;</span></div><div class="line"><span class="undefined">            border-bottom-width: 1px;</span></div><div class="line"><span class="undefined">            border-top-style: solid;</span></div><div class="line"><span class="undefined">            border-bottom-style: solid;</span></div><div class="line"><span class="css">            <span class="selector-tag">border-top-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">border-bottom-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">scale</span>(0<span class="selector-class">.1</span>, 1);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">scale</span>(0<span class="selector-class">.1</span>, 1);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button8</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="undefined">            opacity: 1;</span></div><div class="line"><span class="undefined">            -webkit-transform: scale(1, 1);</span></div><div class="line"><span class="undefined">                    transform: scale(1, 1);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button8</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="undefined">            content: '';</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="undefined">            width: 100%;</span></div><div class="line"><span class="css">            <span class="selector-tag">height</span><span class="selector-pseudo">:100</span>%;</span></div><div class="line"><span class="css">            <span class="selector-tag">z-index</span><span class="selector-pseudo">:1</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.25</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button8</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">opacity</span><span class="selector-pseudo">:0</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">scale</span>(0<span class="selector-class">.1</span>, 1);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">scale</span>(0<span class="selector-class">.1</span>, 1);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果九 */</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button9</span>&#123;</span></div><div class="line"><span class="undefined">            color: rgba(255,255,255,1);</span></div><div class="line"><span class="css">            <span class="selector-tag">border</span><span class="selector-pseudo">:none</span>;</span></div><div class="line"><span class="undefined">            position: relative;</span></div><div class="line"><span class="undefined">            border-top-width: 1px;</span></div><div class="line"><span class="undefined">            border-bottom-width: 1px;</span></div><div class="line"><span class="undefined">            border-top-style: solid;</span></div><div class="line"><span class="undefined">            border-bottom-style: solid;</span></div><div class="line"><span class="css">            <span class="selector-tag">border-top-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">border-bottom-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button9</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">span</span>&#123;</span></div><div class="line"><span class="undefined">            letter-spacing: 2px;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button9</span><span class="selector-pseudo">:hover</span>&#123;</span></div><div class="line"><span class="undefined">            border-top-color: rgba(255,255,255,0);</span></div><div class="line"><span class="undefined">            border-bottom-color: rgba(255,255,255,0);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button9</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="undefined">            content: '';</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="undefined">            right: 0;</span></div><div class="line"><span class="undefined">            width: 1px;</span></div><div class="line"><span class="undefined">            height: 100%;</span></div><div class="line"><span class="undefined">            z-index: 1;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button9</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>&#123;</span></div><div class="line"><span class="undefined">            -webkit-transform: translate(-76px,0) rotate(270deg);</span></div><div class="line"><span class="undefined">                    transform: translate(-76px,0) rotate(270deg);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button9</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="undefined">            content: '';</span></div><div class="line"><span class="undefined">            position: absolute;</span></div><div class="line"><span class="undefined">            top: 0;</span></div><div class="line"><span class="undefined">            left: 0;</span></div><div class="line"><span class="undefined">            width: 1px;</span></div><div class="line"><span class="undefined">            height: 100%;</span></div><div class="line"><span class="undefined">            z-index: 1;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.5</span>);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button9</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span>&#123;</span></div><div class="line"><span class="undefined">            -webkit-transform: translate(76px,0) rotate(180deg);</span></div><div class="line"><span class="undefined">                    transform: translate(76px,0) rotate(180deg);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="comment">/* 效果十 */</span></span></div><div class="line"><span class="css">        <span class="selector-class">.button10</span>&#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="css">                    <span class="selector-tag">transition</span>: <span class="selector-tag">all</span> 0<span class="selector-class">.3s</span>;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        <span class="selector-class">.button10</span><span class="selector-pseudo">:hover</span>&#123;</span></div><div class="line"><span class="undefined">            -webkit-animation-name: move;</span></div><div class="line"><span class="undefined">                    animation-name: move;</span></div><div class="line"><span class="undefined">            -webkit-animation-duration: 1s;</span></div><div class="line"><span class="undefined">                    animation-duration: 1s;</span></div><div class="line"><span class="undefined">            -webkit-animation-fill-mode: both;</span></div><div class="line"><span class="undefined">                    animation-fill-mode: both;</span></div><div class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-tag">rgba</span>(255,255,255,0<span class="selector-class">.2</span>);</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="css">        @-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> move &#123;</span></div><div class="line"><span class="css">          <span class="selector-tag">from</span>, 11<span class="selector-class">.1</span>%, <span class="selector-tag">to</span> &#123;</span></div><div class="line"><span class="undefined">            -webkit-transform: none;</span></div><div class="line"><span class="undefined">            transform: none;</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="css">          22<span class="selector-class">.2</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-12</span><span class="selector-class">.5deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-12</span><span class="selector-class">.5deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-12</span><span class="selector-class">.5deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-12</span><span class="selector-class">.5deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="css">          33<span class="selector-class">.3</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(6<span class="selector-class">.25deg</span>) <span class="selector-tag">skewY</span>(6<span class="selector-class">.25deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(6<span class="selector-class">.25deg</span>) <span class="selector-tag">skewY</span>(6<span class="selector-class">.25deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="css">          44<span class="selector-class">.4</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-3</span><span class="selector-class">.125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-3</span><span class="selector-class">.125deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-3</span><span class="selector-class">.125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-3</span><span class="selector-class">.125deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="css">          55<span class="selector-class">.5</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(1<span class="selector-class">.5625deg</span>) <span class="selector-tag">skewY</span>(1<span class="selector-class">.5625deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(1<span class="selector-class">.5625deg</span>) <span class="selector-tag">skewY</span>(1<span class="selector-class">.5625deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="css">          66<span class="selector-class">.6</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-0</span><span class="selector-class">.78125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-0</span><span class="selector-class">.78125deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-0</span><span class="selector-class">.78125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-0</span><span class="selector-class">.78125deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="css">          77<span class="selector-class">.7</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(0<span class="selector-class">.390625deg</span>) <span class="selector-tag">skewY</span>(0<span class="selector-class">.390625deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(0<span class="selector-class">.390625deg</span>) <span class="selector-tag">skewY</span>(0<span class="selector-class">.390625deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="css">          88<span class="selector-class">.8</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-0</span><span class="selector-class">.1953125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-0</span><span class="selector-class">.1953125deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-0</span><span class="selector-class">.1953125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-0</span><span class="selector-class">.1953125deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="undefined"></span></div><div class="line"><span class="css">        @<span class="keyword">keyframes</span> move &#123;</span></div><div class="line"><span class="css">          <span class="selector-tag">from</span>, 11<span class="selector-class">.1</span>%, <span class="selector-tag">to</span> &#123;</span></div><div class="line"><span class="undefined">            -webkit-transform: none;</span></div><div class="line"><span class="undefined">                    transform: none;</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="css">          22<span class="selector-class">.2</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-12</span><span class="selector-class">.5deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-12</span><span class="selector-class">.5deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-12</span><span class="selector-class">.5deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-12</span><span class="selector-class">.5deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="css">          33<span class="selector-class">.3</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(6<span class="selector-class">.25deg</span>) <span class="selector-tag">skewY</span>(6<span class="selector-class">.25deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(6<span class="selector-class">.25deg</span>) <span class="selector-tag">skewY</span>(6<span class="selector-class">.25deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="css">          44<span class="selector-class">.4</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-3</span><span class="selector-class">.125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-3</span><span class="selector-class">.125deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-3</span><span class="selector-class">.125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-3</span><span class="selector-class">.125deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="css">          55<span class="selector-class">.5</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(1<span class="selector-class">.5625deg</span>) <span class="selector-tag">skewY</span>(1<span class="selector-class">.5625deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(1<span class="selector-class">.5625deg</span>) <span class="selector-tag">skewY</span>(1<span class="selector-class">.5625deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="css">          66<span class="selector-class">.6</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-0</span><span class="selector-class">.78125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-0</span><span class="selector-class">.78125deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-0</span><span class="selector-class">.78125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-0</span><span class="selector-class">.78125deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="css">          77<span class="selector-class">.7</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(0<span class="selector-class">.390625deg</span>) <span class="selector-tag">skewY</span>(0<span class="selector-class">.390625deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(0<span class="selector-class">.390625deg</span>) <span class="selector-tag">skewY</span>(0<span class="selector-class">.390625deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="css">          88<span class="selector-class">.8</span>% &#123;</span></div><div class="line"><span class="css">            <span class="selector-tag">-webkit-transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-0</span><span class="selector-class">.1953125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-0</span><span class="selector-class">.1953125deg</span>);</span></div><div class="line"><span class="css">                    <span class="selector-tag">transform</span>: <span class="selector-tag">skewX</span>(<span class="selector-tag">-0</span><span class="selector-class">.1953125deg</span>) <span class="selector-tag">skewY</span>(<span class="selector-tag">-0</span><span class="selector-class">.1953125deg</span>);</span></div><div class="line"><span class="undefined">          &#125;</span></div><div class="line"><span class="undefined">        &#125;</span></div><div class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button1"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login1<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button2"</span> <span class="attr">data-text</span>=<span class="string">"login2"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login2<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button3"</span> <span class="attr">data-text</span>=<span class="string">"login3"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login3<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button4"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login4<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button5"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login5<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button6"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login6<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button7"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login7<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button8"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login8<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button9"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login9<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"warp"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sim-button button10"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">span</span>&gt;</span>login10<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+      </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/5d36ff15/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dsiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dsiny's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/5d36ff15/" itemprop="url">Markdown基本语法</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-10T16:30:26+08:00">
+                2017-02-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/5d36ff15/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="posts/5d36ff15/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+            <span class="post-meta-divider">|</span>
+            
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+
+                <span title="字数统计">
+                  1,256
+                </span>
+              
+
+              
+
+              
+          
+            <div class="post-wordcount">
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h3><p>之所以把特殊字符放到最前面,就是因为Markdown对特殊字符处理不是很友好,很容易出现很奇怪的异常,其实就是因为文章中包含了特殊字符无法编译通过，所以导致Hexo无法渲染 .<br>下面是比较常见的几个:</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">! &amp;#<span class="number">33</span>; — 惊叹号Exclamation mark</div><div class="line">” &amp;#<span class="number">34</span>; &amp;quot; 双引号Quotation mark</div><div class="line"># &amp;#<span class="number">35</span>; — 数字标志Number sign</div><div class="line">$ &amp;#<span class="number">36</span>; — 美元标志Dollar sign</div><div class="line">% &amp;#<span class="number">37</span>; — 百分号Percent sign</div><div class="line">&amp; &amp;#<span class="number">38</span>; &amp;amp; Ampersand</div><div class="line">‘ &amp;#<span class="number">39</span>; — 单引号Apostrophe</div><div class="line">( &amp;#<span class="number">40</span>; — 小括号左边部分Left parenthesis</div><div class="line">) &amp;#<span class="number">41</span>; — 小括号右边部分Right parenthesis</div><div class="line">* &amp;#<span class="number">42</span>; — 星号Asterisk</div><div class="line">+ &amp;#<span class="number">43</span>; — 加号Plus sign</div><div class="line">&lt; &amp;#<span class="number">60</span>; &amp;lt; 小于号Less than</div><div class="line">= &amp;#<span class="number">61</span>; — 等于符号Equals sign</div><div class="line">&gt; &amp;#<span class="number">62</span>; &amp;gt; 大于号Greater than</div><div class="line">? &amp;#<span class="number">63</span>; — 问号Question mark</div><div class="line">@ &amp;#<span class="number">64</span>; — Commercial at</div><div class="line">[ &amp;#<span class="number">91</span>; --- 中括号左边部分Left square bracket</div><div class="line">\ &amp;#<span class="number">92</span>; --- 反斜杠Reverse solidus (backslash)</div><div class="line">] &amp;#<span class="number">93</span>; — 中括号右边部分Right square bracket</div><div class="line">&#123; &amp;#<span class="number">123</span>; — 大括号左边部分Left curly brace</div><div class="line">| &amp;#<span class="number">124</span>; — 竖线Vertical bar</div><div class="line">&#125; &amp;#<span class="number">125</span>; — 大括号右边部分Right curly brace</div></pre></td></tr></table></figure>
+<p>特别注意的是小括号 <code>( )</code> 大括号 <code>{ }</code> ,如果不小心写了,你执行<code>hexo s –debug</code>可能报一些莫名其妙的错误!</p>
+<p><a href="http://www.cnblogs.com/xcsn/p/3559624.html" target="_blank" rel="external">更多特殊字符转义的内容</a></p>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>在文字前加上#号<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/5d36ff15/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+      <div>
+        
+      </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/5460f326/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -881,434 +1244,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/af2d2210/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Dsiny">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dsiny's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/posts/af2d2210/" itemprop="url">前端常用网址</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-15T12:18:21+08:00">
-                2016-11-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/H5/" itemprop="url" rel="index">
-                    <span itemprop="name">H5</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            <!--noindex-->
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/posts/af2d2210/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="posts/af2d2210/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-              <!--/noindex-->
-            
-          
-
-          
-          
-
-          
-
-            <span class="post-meta-divider">|</span>
-            
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-
-                <span title="字数统计">
-                  269
-                </span>
-              
-
-              
-
-              
-          
-            <div class="post-wordcount">
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <script src="\assets\js\APlayer.min.js"> </script><p><strong>前端常用网址</strong></p>
-<ol>
-<li><p>jQuery插件库：  <a href="http://www.jq22.com/" target="_blank" rel="external">http://www.jq22.com/</a></p>
-</li>
-<li><p>17素材网：  <a href="http://www.17sucai.com/" target="_blank" rel="external">http://www.17sucai.com/</a></p>
-</li>
-<li><p>dowebok(特效插件)：  <a href="http://www.dowebok.com/" target="_blank" rel="external">http://www.dowebok.com/</a></p>
-</li>
-<li><p>w3cplus(w3cplus提供了大量的css,css3,sass,responsive,mobile等最新前端技术文章、demo及下载资源)：  <a href="http://www.w3cplus.com/" target="_blank" rel="external">http://www.w3cplus.com/</a></p>
-</li>
-<li><p>前端里(Web 开发技术和资源分享)：<a href="http://www.yyyweb.com/" target="_blank" rel="external">http://www.yyyweb.com/</a></p>
-</li>
-</ol>
-<p><strong>视频网站</strong></p>
-<ol>
-<li><p>慕课网：  <a href="http://www.imooc.com/" target="_blank" rel="external">http://www.imooc.com/</a></p>
-</li>
-<li><p>极客学院：  <a href="http://www.jikexueyuan.com/" target="_blank" rel="external">http://www.jikexueyuan.com/</a></p>
-</li>
-<li><p>智能社：  <a href="http://www.zhinengshe.com/" target="_blank" rel="external">http://www.zhinengshe.com/</a></p>
-</li>
-</ol>
-<p><strong>css3</strong></p>
-<ol>
-<li><p>CSS3 的鼠标悬停效果集合： <a href="http://ianlunn.github.io/Hover/" target="_blank" rel="external">http://ianlunn.github.io/Hover/</a></p>
-</li>
-<li><p>animate.css：  <a href="https://daneden.github.io/animate.css/" target="_blank" rel="external">https://daneden.github.io/animate.css/</a></p>
-</li>
-<li><p>CSS3手机响应式效果：<a href="http://www.zaole.net/" target="_blank" rel="external">http://www.zaole.net/</a></p>
-</li>
-</ol>
-<p><strong>图标</strong></p>
-<ul>
-<li>Iconfont： <a href="http://www.iconfont.cn/" target="_blank" rel="external">http://www.iconfont.cn/</a></li>
-</ul>
-<p><strong>设计相关</strong></p>
-<ol>
-<li><p>花瓣网：<a href="http://huaban.com/" target="_blank" rel="external">http://huaban.com/</a></p>
-</li>
-<li><p>爱果果：<a href="http://www.iguoguo.net/" target="_blank" rel="external">http://www.iguoguo.net/</a></p>
-</li>
-<li><p>优设网：<a href="http://www.uisdc.com/" target="_blank" rel="external">http://www.uisdc.com/</a></p>
-</li>
-<li><p>站酷网：<a href="http://www.zcool.com.cn/" target="_blank" rel="external">http://www.zcool.com.cn/</a></p>
-</li>
-<li><p>黄蜂网：<a href="http://woofeng.cn/" target="_blank" rel="external">http://woofeng.cn/</a></p>
-</li>
-<li><p>素材天下：<a href="http://www.sucaitianxia.com/" target="_blank" rel="external">http://www.sucaitianxia.com/</a></p>
-</li>
-<li><p>UI中国：<a href="http://www.ui.cn/" target="_blank" rel="external">http://www.ui.cn/</a></p>
-</li>
-</ol>
-<p><strong>日常</strong></p>
-<ol>
-<li><p>jQuery 之家：<a href="http://www.htmleaf.com/" target="_blank" rel="external">http://www.htmleaf.com/</a></p>
-</li>
-<li><p>segmentfault：<a href="https://segmentfault.com/" target="_blank" rel="external">https://segmentfault.com/</a></p>
-</li>
-<li><p>大前端：<a href="http://www.daqianduan.com/" target="_blank" rel="external">http://www.daqianduan.com/</a></p>
-</li>
-<li><p>牛客网（专业IT笔试面试备考平台）：<a href="https://www.nowcoder.com/" target="_blank" rel="external">https://www.nowcoder.com/</a></p>
-</li>
-<li><p>前端网：<a href="http://www.qdfuns.com/" target="_blank" rel="external">http://www.qdfuns.com/</a></p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-      <div>
-        
-      </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/fe6afcc5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Dsiny">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dsiny's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/posts/fe6afcc5/" itemprop="url">hexo seo优化</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-09T10:10:15+08:00">
-                2016-11-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            <!--noindex-->
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/posts/fe6afcc5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="posts/fe6afcc5/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-              <!--/noindex-->
-            
-          
-
-          
-          
-
-          
-
-            <span class="post-meta-divider">|</span>
-            
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-
-                <span title="字数统计">
-                  2,622
-                </span>
-              
-
-              
-
-              
-          
-            <div class="post-wordcount">
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="Next主题自带SEO优化选项"><a href="#Next主题自带SEO优化选项" class="headerlink" title="Next主题自带SEO优化选项"></a>Next主题自带SEO优化选项</h3><p>hexo博客next提供了seo优化选项，在主题配置文件_config.yml中有个选项是seo，默认是false，改成true即开启了seo优化，会进行一些seo优化，如改变博文title等，然后相同文件下有个关键字选项keywords，填充上，写博文时最好每篇博文都加上keywords。hexo的根目录配置文件_config.yml中title、subtitle和description也建议填上。开启seo优化后可以查看网页源码跟之前有什么不同。</p>
-<h3 id="文章标题转换唯一链接"><a href="#文章标题转换唯一链接" class="headerlink" title="文章标题转换唯一链接"></a>文章标题转换唯一链接</h3><p>使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="external"><code>hexo-abbrlink</code></a>可以做到，安装：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> npm install hexo-abbrlink --save</span></div></pre></td></tr></table></figure>
-<p>然后hexo的根目录配置文件<code>_config.yml</code>中修改：</p>
-<figure class="highlight x86asm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">permalink:</span> :abbrlink/</div><div class="line"><span class="symbol">abbrlink:</span></div><div class="line"><span class="symbol">  alg:</span> <span class="keyword">crc32</span>  # 算法：crc16(<span class="meta">default</span>) <span class="keyword">and</span> <span class="keyword">crc32</span></div><div class="line"><span class="symbol">  rep:</span> <span class="keyword">dec</span>    # 进制：<span class="keyword">dec</span>(<span class="meta">default</span>) <span class="keyword">and</span> hex</div></pre></td></tr></table></figure>
-<p>这样就确保了博文链接的唯一化，只要不修改md文件的abbrlink的值，url就永久不会改变。如此md文件名和文件内容也可以随便改了。这样也有利于SEO优化。</p>
-<h3 id="给出站链接添加-“nofollow”-标签"><a href="#给出站链接添加-“nofollow”-标签" class="headerlink" title="给出站链接添加 “nofollow” 标签"></a>给出站链接添加 “nofollow” 标签</h3><p>nofollow标签是由谷歌领头创新的一个“反垃圾链接”的标签，并被百度、yahoo等各大搜索引擎广泛支持，引用nofollow标签的目的是：用于指示搜索引擎不要追踪（即抓取）网页上的带有nofollow属性的任何出站链接，以减少垃圾链接的分散网站权重。</p>
-<p>Hexo 的 Next 主题需要改以下几个地方：</p>
-<p>找到<code>footer.swig</code>，路径在<code>your-hexo-site\themes\next\layout\_partials</code>，将下面代码中的a标签加上<code>rel=&quot;external nofollow&quot;</code>属性；</p>
-<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; __(<span class="name">'footer.powered'</span>, '&lt;a  class=<span class="string">"theme-link"</span>  href=<span class="string">"http://hexo.io"</span>&gt;Hexo&lt;/a&gt;') &#125;&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a <span class="attribute">class</span>=<span class="string">"theme-link"</span> <span class="attribute">href</span>=<span class="string">"https://github.com/iissnan/hexo-theme-next"</span>&gt;</div></pre></td></tr></table></figure>
-<p>修改<code>sidebar.swig</code>文件，路径在<code>your-hexo-site\themes\next\layout_macro</code>，将下面代码中的a标签加上<code>rel=&quot;external nofollow&quot;</code>属性；<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/posts/fe6afcc5/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-      <div>
-        
-      </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1358,7 +1298,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1369,7 +1309,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1380,7 +1320,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2221,12 +2161,12 @@
 
   
 
-  <!-- 鼠标页面点击 -->
+
 <script type="text/javascript" src="/js/src/mouse.js"></script>
 <script type="text/javascript" src="/js/src/activate-power-mode.js"></script>
 <script>
-POWERMODE.colorful = true; // 控制开启/开启礼花特效
-POWERMODE.shake = true; // 控制开启/关闭屏幕震动特效
+POWERMODE.colorful = true;
+POWERMODE.shake = true;
 document.body.addEventListener('input', POWERMODE);
 </script>
 </body>
