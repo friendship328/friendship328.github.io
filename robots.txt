@@ -13,4 +13,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://friendship328.github.io/sitemap.xml
+Sitemap: redsiny.com/sitemap.xml
+Sitemap: redsiny.com/baidusitemap.xml

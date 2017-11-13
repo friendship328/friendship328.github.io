@@ -10,6 +10,7 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta http-equiv=“Content-Security-Policy” content=“upgrade-insecure-requests” />
 <meta name="theme-color" content="#222">
 <script>
     (function(){
@@ -127,7 +128,7 @@
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo安装教程">
-<meta property="og:url" content="https://friendship328.github.io/posts/986095e4/index.html">
+<meta property="og:url" content="redsiny.com/posts/986095e4/index.html">
 <meta property="og:site_name" content="Dsiny&#39;s Blog">
 <meta property="og:description" content="安装node.js官方下载地址 设置npm淘宝镜像站npm默认的源的下载速度可能很慢，建议使用淘宝镜像替换 执行下面的命令，将npm的源设置成淘宝镜像站 1npm config set registry &quot;https://registry.npm.taobao.org&quot; 申请Github账号Github注册页面 创建博客仓库注意! 仓库名应该为：用户名.github.io。比如，我的仓库名是：fr">
 <meta property="og:locale" content="zh-Hans">
@@ -164,7 +165,7 @@
 
 
 
-  <link rel="canonical" href="https://friendship328.github.io/posts/986095e4/"/>
+  <link rel="canonical" href="redsiny.com/posts/986095e4/"/>
 
 
 
@@ -332,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/986095e4/">
+    <link itemprop="mainEntityOfPage" href="redsiny.com/posts/986095e4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dsiny">
@@ -475,7 +476,7 @@
 <p>注意：<code>type: git</code>中的冒号后面由空格<br>注意：将<code>git@github.com:friendship328/friendship328.github.io.git</code> 中的用户名换成自己的用户名 <code>git@github.com:github_username/github_username.github.io.git</code></p>
 <h3 id="部署hexo"><a href="#部署hexo" class="headerlink" title="部署hexo"></a>部署hexo</h3><p>输入下面的命令将hexo博客部署到github中：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> 清空静态页面</span></div><div class="line">hexo clean</div><div class="line"><span class="meta">#</span><span class="bash"> 生成静态页面</span></div><div class="line">hexo generate</div><div class="line"><span class="meta">#</span><span class="bash"> 部署</span></div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<p>打开网页，输入<code>http://github_username.github.io</code>，打开github上托管的博客。如我的博客地址是：<a href="http://friendship328.github.io">http://friendship328.github.io</a></p>
+<p>打开网页，输入<code>http://github_username.github.io</code>，打开github上托管的博客。如我的博客地址是：<a href="http://friendship328.github.io" target="_blank" rel="external">http://friendship328.github.io</a></p>
 <h3 id="hexo命令缩写"><a href="#hexo命令缩写" class="headerlink" title="hexo命令缩写"></a>hexo命令缩写</h3><p>hexo支持命令缩写，如下所示。<code>hexo g</code>等价于<code>hexo generate</code></p>
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo g：hexo generate</div><div class="line">hexo c：hexo clean</div><div class="line">hexo s：hexo server</div><div class="line">hexo d：hexo deploy</div></pre></td></tr></table></figure>
 <h3 id="hexo组合命令"><a href="#hexo组合命令" class="headerlink" title="hexo组合命令"></a>hexo组合命令</h3><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># 清除、生成、启动</span></div><div class="line">hexo clean <span class="meta">&amp;&amp; hexo g -s</span></div><div class="line"><span class="meta"># 清除、生成、部署</span></div><div class="line">hexo clean <span class="meta">&amp;&amp; hexo g -d</span></div></pre></td></tr></table></figure>

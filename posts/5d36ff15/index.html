@@ -10,6 +10,7 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta http-equiv=“Content-Security-Policy” content=“upgrade-insecure-requests” />
 <meta name="theme-color" content="#222">
 <script>
     (function(){
@@ -127,7 +128,7 @@
 <meta name="keywords" content="hexo,Markdown">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown基本语法">
-<meta property="og:url" content="https://friendship328.github.io/posts/5d36ff15/index.html">
+<meta property="og:url" content="redsiny.com/posts/5d36ff15/index.html">
 <meta property="og:site_name" content="Dsiny&#39;s Blog">
 <meta property="og:description" content="特殊字符之所以把特殊字符放到最前面,就是因为Markdown对特殊字符处理不是很友好,很容易出现很奇怪的异常,其实就是因为文章中包含了特殊字符无法编译通过，所以导致Hexo无法渲染 .下面是比较常见的几个: 12345678910111213141516171819202122! &amp;amp;#33; — 惊叹号Exclamation mark” &amp;amp;#34; &amp;amp;quot; 双引号Qu">
 <meta property="og:locale" content="zh-Hans">
@@ -164,7 +165,7 @@
 
 
 
-  <link rel="canonical" href="https://friendship328.github.io/posts/5d36ff15/"/>
+  <link rel="canonical" href="redsiny.com/posts/5d36ff15/"/>
 
 
 
@@ -332,7 +333,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://friendship328.github.io/posts/5d36ff15/">
+    <link itemprop="mainEntityOfPage" href="redsiny.com/posts/5d36ff15/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dsiny">
@@ -460,7 +461,7 @@
 <h3 id="粗体斜体"><a href="#粗体斜体" class="headerlink" title="粗体斜体"></a>粗体斜体</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="emphasis">*斜体文本*</span>    <span class="emphasis">_斜体文本_</span></div><div class="line"><span class="strong">**粗体文本**</span>    <span class="strong">__粗体文本__</span></div><div class="line"><span class="strong">***粗斜体文本**</span>*    <span class="strong">___粗斜体文本__</span>_</div></pre></td></tr></table></figure>
 <p>预览效果：<br><em>斜体文本</em>    <em>斜体文本</em><br><strong>粗体文本</strong>    <strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong>    <strong><em>粗斜体文本</em></strong></p>
 <h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">常用链接方法</div><div class="line">文字链接 [<span class="string">链接名称</span>](<span class="link">https://friendship328.github.io/</span>)</div><div class="line">网址链接 <span class="xml"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">friendship328.github.io</span>/&gt;</span></span></div><div class="line"></div><div class="line"></div><div class="line">高级链接技巧</div><div class="line">这个链接用 1 作为网址变量 [<span class="string">Google</span>][<span class="symbol">1</span>].</div><div class="line">这个链接用 yahoo 作为网址变量 [<span class="string">Yahoo!</span>][<span class="symbol">yahoo</span>].</div><div class="line">然后在文档的结尾为变量赋值（网址）</div><div class="line"></div><div class="line">  [1]: http://www.google.com/</div><div class="line">  [yahoo]: http://www.yahoo.com/</div></pre></td></tr></table></figure>
-<p>预览效果：<br>文字链接 <a href="https://friendship328.github.io/">链接名称</a><br>网址链接 <a href="https://friendship328.github.io/">https://friendship328.github.io/</a></p>
+<p>预览效果：<br>文字链接 <a href="https://friendship328.github.io/" target="_blank" rel="external">链接名称</a><br>网址链接 <a href="https://friendship328.github.io/" target="_blank" rel="external">https://friendship328.github.io/</a></p>
 <p>高级链接技巧<br>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="external">Google</a>.<br>这个链接用 yahoo 作为网址变量 <a href="http://www.yahoo.com/" target="_blank" rel="external">Yahoo!</a>.</p>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- 列表文本前使用 <span class="string">[减号+空格]</span></div><div class="line">+ 列表文本前使用 <span class="string">[加号+空格]</span></div><div class="line">* 列表文本前使用 <span class="string">[星号+空格]</span></div></pre></td></tr></table></figure>
 <h4 id="普通有序列表"><a href="#普通有序列表" class="headerlink" title="普通有序列表"></a>普通有序列表</h4><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> 列表前使用 [数字+空格]</div><div class="line"><span class="number">2.</span> 我们会自动帮你添加数字</div><div class="line"><span class="number">7.</span> 不用担心数字不对，显示的时候我们会自动把这行的 <span class="number">7</span> 纠正为 <span class="number">3</span></div></pre></td></tr></table></figure>
