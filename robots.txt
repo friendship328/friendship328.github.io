@@ -13,5 +13,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: redsiny.com/sitemap.xml
-Sitemap: redsiny.com/baidusitemap.xml
+Sitemap: https://redsiny.com/sitemap.xml
+Sitemap: https://redsiny.com/baidusitemap.xml
