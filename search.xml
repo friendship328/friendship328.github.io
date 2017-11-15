@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[一人我饮酒醉]]></title>
     <url>%2Fposts%2Fea259480%2F</url>
-    <content type="text"><![CDATA[var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/yiren.png"}});]]></content>
+    <content type="text"><![CDATA[var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/yirenyinjiu.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/yiren.png"}});]]></content>
       <categories>
         <category>视频</category>
       </categories>
@@ -136,18 +136,6 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Blizzard]]></title>
-    <url>%2Fposts%2Fc454c54e%2F</url>
-    <content type="text"><![CDATA[var dplayer0 = new DPlayer({"element":document.getElementById("dplayer0"),"autoplay":0,"theme":"#FADFA3","loop":1,"video":{"url":"http://oybkqi1gi.bkt.clouddn.com/%E6%9A%B4%E9%9B%AA%E6%B8%B8%E6%88%8FCG.mp4","pic":"http://oybkqi1gi.bkt.clouddn.com/12.png"}});]]></content>
-      <categories>
-        <category>游戏</category>
-      </categories>
-      <tags>
-        <tag>Blizzard</tag>
-        <tag>CG</tag>
       </tags>
   </entry>
   <entry>
